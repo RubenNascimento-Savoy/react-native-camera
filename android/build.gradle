@@ -1,0 +1,53 @@
+buildscript {
+  repositories {
+    jcenter()
+    maven {
+      url 'https://maven.google.com'
+    }
+  }
+
+  dependencies {
+    classpath 'com.android.tools.build:gradle:3.0.0'
+  }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+  compileSdkVersion 26
+  buildToolsVersion "26.0.2"
+
+  defaultConfig {
+    minSdkVersion 16
+    targetSdkVersion 26
+
+    versionCode 1
+    versionName "1.0.0"
+  }
+  lintOptions {
+    abortOnError false
+    warning 'InvalidPackage'
+  }
+}
+
+repositories {
+  mavenCentral()
+  maven {
+   url 'https://maven.google.com'
+  }
+  maven { url "https://jitpack.io" }
+  maven {
+    // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+    url "$rootDir/../node_modules/react-native/android"
+  }
+  maven {
+      url "$projectDir/../../react-native/android"
+  }
+}
+
+dependencies {
+  compile 'com.facebook.react:react-native:+'
+  compile "com.android.support:exifinterface:25.1.0"
+  compile "com.drewnoakes:metadata-extractor:2.9.1"
+  compile "com.android.support:support-annotations:25.1.0"
+  compile "com.android.support:support-v4:25.1.0"}
