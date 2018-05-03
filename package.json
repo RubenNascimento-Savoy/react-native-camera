@@ -41,7 +41,7 @@
     ]
   },
   "main": "src/index.js",
-  "name": "@holly/react-native-camera",
+  "name": "react-native-camera-mini",
   "nativePackage": true,
   "pre-commit": "lint:staged",
   "repository": {
