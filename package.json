@@ -1,42 +1,4 @@
 {
-  "_from": "react-native-camera@latest",
-  "_id": "react-native-camera@1.1.2",
-  "_inBundle": false,
-  "_integrity": "sha512-R4/Odd5sN2/NnhfQxd3oeEqml1DO0lYQ+6qUVEHF0FggUk7gueT/kjenpYdMiZ330QFXsSn/p8YvGBC3ncRzbg==",
-  "_location": "/react-native-camera",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "react-native-camera@latest",
-    "name": "react-native-camera",
-    "escapedName": "react-native-camera",
-    "rawSpec": "latest",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/react-native-camera/-/react-native-camera-1.1.2.tgz",
-  "_shasum": "a93c389c522c8909c564f04c4a86072909259d07",
-  "_spec": "react-native-camera@latest",
-  "_where": "D:\\workdir\\CameraDemo",
-  "author": {
-    "name": "Lochlan Wansbrough",
-    "email": "lochie@live.com",
-    "url": "http://lwansbrough.com"
-  },
-  "bugs": {
-    "url": "https://github.com/react-native-community/react-native-camera/issues"
-  },
-  "bundleDependencies": false,
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/react-native-camera",
-    "logo": "https://opencollective.com/opencollective/logo.txt"
-  },
   "dependencies": {
     "lodash": "^4.17.4",
     "prop-types": "^15.5.10"
@@ -65,13 +27,10 @@
   },
   "homepage": "https://github.com/react-native-community/react-native-camera",
   "keywords": [
-    "barcode",
-    "camera",
-    "code",
-    "native",
-    "qr",
     "react",
-    "react-native"
+    "react-native",
+    "react-native-component",
+    "react-native-camera"
   ],
   "license": "MIT",
   "lint-staged": {
@@ -82,12 +41,12 @@
     ]
   },
   "main": "src/index.js",
-  "name": "react-native-camera",
+  "name": "@holly/react-native-camera",
   "nativePackage": true,
   "pre-commit": "lint:staged",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/react-native-community/react-native-camera.git"
+    "url": "git+https://github.com/liuhong1happy/react-native-camera.git"
   },
   "scripts": {
     "commitmsg": "commitlint -e $GIT_PARAMS",
